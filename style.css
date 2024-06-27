@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    padding : 0;
+    margin : 0;
+    border : 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+body , html , .root{
+    width: 100vw;
+    min-height: 100vh;
+    height: max-content;
+}
+
+.br{
+    width: 0;
+    height: 0;
+}
+
+.br::after{
+        content: "\a";
+        white-space: pre;
+}
+
+@media screen and (min-width : 1024px) {
+
+    .mobile {
+        display: none;
+    }
+
+    header.top{
+        background-image: url(./images/desktop/image-hero.jpg);
+        background-size: cover;
+        min-height: 600px;
+        padding: 80px 10vw 0 10vw;
+    }
+
+    nav.navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav.navbar ul.links{
+        display: flex;
+        gap: 35px;
+    }
+
+    nav.navbar ul.links li a{
+        color: white;
+        font-size: 1.1em;
+        font-family: "Alata", sans-serif;
+        padding-bottom: 20px;
+    }
+
+    nav.navbar ul.links li a:hover{
+        color: white;
+        font-size: 1.1em;
+        font-family: "Alata", sans-serif;
+        border-bottom: 2px solid white;
+    }
+
+    header.top div{
+        margin-top: 100px;
+        padding: 40px 0px 40px 45px;
+        border: 2px solid white;
+        color: white;
+        font-weight:lighter;
+        font-size: 5em;
+        font-family: "Josefin Sans", sans-serif;
+        width: 60%;
+    }
+
+    main.content {
+        padding: 120px 10vw 120px 10vw;
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+    }
+
+    main.content section.description {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    main.content section.description div.info{
+        min-width: 35vw;
+        padding: 60px;
+        position: relative;
+        right: 200px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    main.content section.description div.info p {
+        font-size: 1.1em;
+        line-height: 30px;
+        color: hsl(0, 0%, 41%);
+        font-family: "Alata", sans-serif;
+        font-weight: 400;
+    }    
+    
+    main.content section.description div.info h1{
+        text-transform: uppercase;
+        color: black;
+        font-weight:200;
+        font-size: 3em;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    section.creations{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    section.creations div.top{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section.creations div.top h1{
+        text-transform: uppercase;
+        color: black;
+        font-weight:200;
+        font-size: 3em;
+        letter-spacing: 2px;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    section.creations div.top button{
+        text-transform: uppercase;
+        width: 180px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: 1.2px solid black;
+        font-size: 1.2em;
+        font-family: "Alata", sans-serif;
+        font-weight: 300;
+        letter-spacing: 3px;
+        transition: 1s;
+    }
+
+    section.creations div.top button:hover{
+        cursor: pointer;
+        background-color: black;
+        color: white;
+    }
+
+    section.creations div.list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    section.creations div.list img{
+        cursor: pointer;
+        filter: brightness(75%);
+    }
+
+    section.creations div.list div h1{
+        bottom: 100px;
+        left: 30px;
+        position: relative;
+        font-size: 2em;
+        color: white;
+        letter-spacing: 2px;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 200;
+        text-transform: uppercase;
+
+    }
+
+    footer.bottom {
+        background-color: black;
+        padding : 80px 10vw 80px 10vw;
+        display : flex;
+        justify-content: space-between;
+
+    }
+
+    footer.bottom nav.navbar , footer.bottom div.right{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer.bottom nav.navbar img{
+        width: min-content;
+    }
+
+    footer.bottom div.right ul.socialMedia{
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    footer.bottom div.right ul.socialMedia li svg{
+        padding-bottom: 20px;
+    }
+
+    footer.bottom div.right ul.socialMedia li svg:hover{
+        cursor: pointer;
+        color: white;
+        font-size: 1.1em;
+        font-family: "Alata", sans-serif;
+        border-bottom: 2px solid white;
+    }
+
+    footer.bottom div.right p{
+        font-size: 1em;
+        font-family: "Alata", sans-serif;
+        font-weight: 300;
+        color: hsl(0, 0%, 55%);
+    }
+}
+
+@media screen and (max-width : 767px) {
+
+    .desktop {
+        display: none;
+    }
+
+    header.top{
+        background-image: url(./images/desktop/image-hero.jpg);
+        background-size: cover;
+        min-height: 500px;
+        padding: 80px 5vw 0 5vw;
+    }
+
+    nav.navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header.top nav.navbar img {
+        height: 35px;
+    }
+
+    header.top nav.navbar img.mobile {
+        height: 25px;
+    }
+
+    header.top nav.navbar ul.links{
+        padding: 0 0 0 30px;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+
+    }
+
+    header.top ul.links{
+        font-weight: 100;
+        font-family: "Alata", sans-serif;
+        font-size: 3em;
+    }
+
+    .navbarMobile{
+        width: calc(100vw - 60px);
+        position: relative;
+        bottom: 12vh;
+        display: none;
+        justify-content: space-between;
+    }
+
+    nav.navbar ul.links li a{
+        color: white;
+        font-size: 0.9em;
+        font-family: "Alata", sans-serif;
+        padding-bottom: 20px;
+    }
+
+    header.top div{
+        margin-top: 80px;
+        padding: 20px 0px 20px 25px;
+        border: 2px solid white;
+        color: white;
+        font-weight:lighter;
+        font-size: 4.2em;
+        font-family: "Josefin Sans", sans-serif;
+        width: fit-content;
+    }
+
+    span.br{
+        content: "\a";
+    }
+
+    main.content {
+        padding: 120px 5vw 120px 5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    main.content section.description {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    main.content section.description div.info{
+
+        padding: 0 10px 0 10px;
+        text-align: center;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    main.content section.description div.info p {
+        font-size: 0.9em;
+        line-height: 30px;
+        color: hsl(0, 0%, 41%);
+        font-family: "Alata", sans-serif;
+        font-weight: 400;
+    }    
+    
+    main.content section.description div.info h1{
+        text-transform: uppercase;
+        color: black;
+        font-weight:200;
+        font-size: 1.7em;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    section.creations{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    section.creations div.top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    section.creations div.top h1{
+        text-transform: uppercase;
+        color: black;
+        font-weight:200;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    section.creations div.top button{
+        text-transform: uppercase;
+        width: 180px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: 1px solid black;
+        font-size: 1em;
+        font-family: "Alata", sans-serif;
+        font-weight: 300;
+        letter-spacing: 3px;
+        transition: 1s;
+    }
+
+    section.creations div.list{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section.creations div.list img{
+        filter: brightness(75%);
+        max-width: 90vw;
+    }
+
+    section.creations div.list div{
+        position: relative;
+    }
+
+    section.creations div.list div h1{
+        bottom : 15px;
+        left: 30px;
+        position: absolute;
+        font-size: 1.5em;
+        color: white;
+        letter-spacing: 2px;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 200;
+        text-transform: uppercase;
+
+    }
+
+    footer.bottom {
+        background-color: black;
+        padding : 80px 5vw 80px 5vw;
+        display : flex;
+        flex-direction: column;
+        gap: 60px;
+
+    }
+
+    footer.bottom nav.navbar , footer.bottom div.right{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer.bottom nav.navbar ul.links{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer.bottom nav.navbar img{
+        width: min-content;
+    }
+
+    footer.bottom div.right ul.socialMedia{
+        display: flex;
+        gap: 20px;
+    }
+
+    footer.bottom div.right ul.socialMedia li svg{
+        padding-bottom: 20px;
+    }
+
+    footer.bottom div.right ul.socialMedia li svg:hover{
+        cursor: pointer;
+        color: white;
+        font-size: 1.1em;
+        font-family: "Alata", sans-serif;
+        border-bottom: 2px solid white;
+    }
+
+    footer.bottom div.right p{
+        text-align: center;
+        font-size: 0.9em;
+        font-family: "Alata", sans-serif;
+        font-weight: 300;
+        color: hsl(0, 0%, 55%);
+    }
+}
+
